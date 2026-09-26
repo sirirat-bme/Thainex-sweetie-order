@@ -1,0 +1,159 @@
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+  font-family: sans-serif;
+}
+
+.header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+}
+
+.title {
+  margin: 0;
+}
+
+.connection {
+  font-size: 0.85rem;
+  color: #666;
+}
+
+.connectionDot {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  margin-right: 0.4rem;
+}
+
+.dotOnline {
+  background: #2e7d32;
+}
+
+.dotOffline {
+  background: #c62828;
+}
+
+.error {
+  background: #fdecea;
+  color: #c62828;
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+}
+
+.columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+
+@media (max-width: 700px) {
+  .columns {
+    grid-template-columns: 1fr;
+  }
+}
+
+.column {
+  background: #fafafa;
+  border-radius: 12px;
+  padding: 1rem;
+  min-height: 200px;
+}
+
+.columnTitle {
+  margin: 0 0 1rem 0;
+  font-size: 1.05rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.count {
+  background: #eee;
+  border-radius: 999px;
+  padding: 0.1rem 0.6rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.empty {
+  color: #999;
+  font-size: 0.9rem;
+  padding: 1rem 0;
+  text-align: center;
+}
+
+.card {
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 10px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+}
+
+.cardHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 0.5rem;
+}
+
+.tableNumber {
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+.time {
+  font-size: 0.8rem;
+  color: #888;
+}
+
+.itemsList {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 0.75rem 0;
+}
+
+.itemsList li {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.2rem 0;
+  font-size: 0.95rem;
+  border-bottom: 1px dashed #eee;
+}
+
+.itemQty {
+  color: #666;
+  font-weight: 600;
+}
+
+.button {
+  width: 100%;
+  padding: 0.6rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.buttonStart {
+  background: #d81b60;
+  color: #fff;
+}
+
+.buttonServe {
+  background: #2e7d32;
+  color: #fff;
+}
+
+.button:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
